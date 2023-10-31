@@ -1,0 +1,13 @@
+appName: elasticsearch
+replicaCount: 1
+storage: 20Gi
+
+image:
+  repository: docker.elastic.co/elasticsearch/elasticsearch
+  tag: 8.10.0
+
+service:
+  name: elasticsearch-svc
+
+route:
+  name: elasticsearch-route
